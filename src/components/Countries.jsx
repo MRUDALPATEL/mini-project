@@ -34,11 +34,18 @@ function Countries() {
                 alt={country.name.common}
                 className="h-32 w-full object-cover mb-2 rounded"
               />
-              <h2 className="text-xl font-semibold">
-                {country.name.common}
-              </h2>
+              <h2 className="text-xl font-semibold">{country.name.common}</h2>
               <p>Capital: {country.capital?.[0] || "N/A"}</p>
               <p>Region: {country.region}</p>
+              <p>
+                Currency:{" "}
+                {country.currencies
+                  ? Object.values(country.currencies)[0].name +
+                    " (" +
+                    Object.values(country.currencies)[0].symbol +
+                    ")"
+                  : "N/A"}
+              </p>
             </div>
           ))}
         </div>
