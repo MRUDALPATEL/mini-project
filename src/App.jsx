@@ -1,6 +1,7 @@
 import CounterApp from "./components/CounterApp"
 import Countries from "./components/Countries"
 import TodoList from "./components/TodoList"
+import WeatherApp from "./components/WeatherApp"
 
 
 function App() {
@@ -8,7 +9,7 @@ function App() {
 
   return (
     <div>
-      <Countries/>
+      <WeatherApp/>
     </div>
   )
 }
